@@ -6,27 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAKI</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link rel="stylesheet" href="haki.css">
+    <link rel="stylesheet" href="log.css">
 </head>
 
 <body>
     <nav class="navbar">
+        <div class="title">
+            <h1 class="title-nav">AFRICA.</h>
+        </div>
+        <div class="listItems">
+                <ul class="list">
+                    <li class="listItem"><a href="#home">HOME</a></li>
+                    <li class="listItem"><a href="#about">ABOUT</a></li>
+                    <li class="listItem"><a href="#contact">CONTACT</a></li>
+                </ul>
+                
+        </div>
+        <div class="links">
+            
+            <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">log in</button>
+            
+            <div id="login" class="modal">
+            
+                <form class="modal-content animate" action="">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('login').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+            
+                    </div>
+            
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                        <button class="submit" type="submit">Login</button>
+                        <input type="checkbox" checked="checked"> Remember me
+                    </div>
+            
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('login').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+            <button onclick="document.getElementById('create').style.display='block'" style="width:auto;">CREATE AN ACCOUNT</button>
+            <div id="create" class="modal">
+            
+                <form class="modal-content animate" action="">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('create').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+            
+                    </div>
+            
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label><b>Email</b></label>
+                        <input type="email" placeholder="Enter Username" name="uemail" required>
+                        <label><b>PHONE NUMBER</b></label>
+                        <input type="number" placeholder="Enter phone number" name="pnumber" required>
+            
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                        <button class="submit" type="submit">CREATE ACCOUNT</button>
+                        
+                    </div>
+            
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('create').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw">Already have an Account? <a href="#login">Log In</a></span>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
 
-        <h1>AFRICA.</h>
-
-            <ul class="list">
-                <li class="listItem"><a href="#home">HOME</a></li>
-                <li class="listItem"><a href="#about">ABOUT</a></li>
-                <li class="listItem"><a href="#contact">CONTACT</a></li>
-            </ul>
     </nav>
-
     <section class="home-content">
-        <h1 id="title">Haki<h1>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odit explicabo
-                    accusamus in at qui illo quasi adipisci hic, incidunt totam eveniet ducimus beatae facere corrupti,
-                    distinctio ea, provident consequuntur.</p>
-                <button class="button">READ MORE</button>
+        <h1 id="make"></h1>
+        <div class="home">
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing<br/> elit. Pariatur odit explicabo
+                        accusamus in at qui illo quasi adipisci hic, incidunt <br/>totam eveniet ducimus beatae facere
+                        corrupti,
+                        distinctio ea, provident consequuntur.</p>
+                    <button class="button">READ MORE</button>
+        </div>
     </section>
 
     <section class="about-content">
@@ -36,7 +109,7 @@
                 <img classname="aboutImage" src="images3/screen-0.jpg">
             </div>
             <div class="rightInfo">
-                <h2 id="know">Knownafrique Legal Services</h2>
+                <h2 id="know"></h2>
                 <p id="paragraph">KnownAfrique is a law social enterprise driven by the need to solve social
                     <br>problems through legal solutions. We aim to change the face of the law, as we<br> know it,
                     disrupting the legal industry in the process. We are obsessed with the idea<br> that everyone should
@@ -65,15 +138,15 @@
                 <h4 id="title">Get in touch</h4>
                 <p id="idea">You can get in touch anytime for exciting collaborations or projects you <br>have</p>
                 <div class="leftContact">
-                    <label for="Name">Name:
+                    <label for="Name"><b>Name</b>:
                         <p>Knownafrique</p>
                     </label>
 
-                    <label for="Address">Address:
+                    <label for="Address"><b>Address</b>:
                         <p>105,ksm</p>
                     </label>
 
-                    <label for="Email">Email:
+                    <label for="Email"><b>Email</b>:
                         <p>Knownafrique@gmail.com</p>
                     </label>
                 </div>
@@ -94,6 +167,8 @@
         </div>
     </section>
 </body>
+
+</script>
 <script src="haki.js"></script>
 
 </html>

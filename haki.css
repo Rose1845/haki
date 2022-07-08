@@ -5,32 +5,57 @@
    
 }
 
-
 .navbar{
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
+    display: flex;
     padding: 0px 50px;
     background-color: black;
     width:100%;
     height: 60px;
+    align-items: center;
+    justify-content: space-between;
 
     
 }
-.list{
+.links{
+    display: flex;
+   justify-content: space-between;
+}
+
+.title-nav{
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 2px solid #ffff00;
+}
+
+ .list{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    list-style: none;
+    padding-right: 20px;
+    text-align: center;
+    justify-content: center;
     
-
 }
-
-
-a{
+.listItem a{
+  
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-weight: 500;
+
 }
+
+.listItem{
+   
+    font-size: 16px;
+    font-weight: 600;
+   
+}
+/* .listItem:hover{
+    height: 3px;
+    width: 30px;
+    background-color: #ffff00;
+} */
 
 .home-content{
     display: flex;
@@ -38,18 +63,44 @@ a{
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
    
 }
 
+ .title-home{
+    font-size: 36px;
+    font-weight: 900;
+    color:#fff;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    justify-content: center;
+}
+/* .home p .desc{
+    font-size: 30px;
+    color: #fff;
+} */
+
 #make{
-    color:blue;
-    font-weight: 600;
+    color:rgba(0, 0, 255, 0.493);
+    font-size: 4rem;
+    font-weight: 900;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+   
 }
 .about-content{
     display:flex;
     flex-direction: column;
+    overflow: hidden;
    margin-top: 50px;
    
    
@@ -126,6 +177,7 @@ img{
  #title{
     border-top: 1px solid yellow;
     height: 3px;
+    color: #00000065;
     font-size: 16px;
     font-weight: 300;
 }
@@ -150,6 +202,14 @@ img{
     justify-content: space-between;
     margin:5px;
 }
+ input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
 .input:hover{
     border:1px solid green;
 }
